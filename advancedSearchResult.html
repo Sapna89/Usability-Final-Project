@@ -16,7 +16,10 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     <style>
-    .main-container {
+	 .container1, .container2 {
+    padding-bottom: 4%;
+  }	
+  .main-container {
     height: auto;
     border-style: solid;
     border-width: 0px 0px 1px 1px;
@@ -42,7 +45,7 @@
 }
 
 .side-navbar li a{
-  color: #DD2F6B !important;
+	color: #DD2F6B !important;
   font-size: 16px;
   text-shadow: 0.2px 0.2px #212121;
 }
@@ -53,7 +56,7 @@
 }
 
 .navbar-nav {
-  padding: 10px;
+	padding: 10px;
 }
 
 .dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus {
@@ -61,18 +64,21 @@
     }
 
 h2 {
-  color: #DD2F6B !important;
-  text-shadow: 0.5px 0.5px #212121;
-  text-align: center;
-  padding-bottom: 4px;
+	color: #DD2F6B !important;
+	text-shadow: 1px 1px #212121;
+	text-align: center;
 }
 
 h3 {
-  font-family: PilGi;
-  font-weight: bolder;
-  /*text-shadow: 0.5px 0.5px #212121;*/
-  color: #000000;
-  text-align: center;
+	font-family: PilGi;
+	font-weight: bolder;
+	text-shadow: 1px 1px #212121;
+	color: #D1607E;
+}
+
+h3:first-child{
+	color: #F9F9F9;
+	text-shadow: 2px 2px #212121;
 }
 
 .rectangular_form p {
@@ -80,11 +86,21 @@ h3 {
   font-size: 18px;
 }
 
-
+.rectangular_form {
+  /*background-color: rgba(0, 0, 0, 0.9);*/
+  width: auto;
+  padding: 20px;
+  /*box-shadow: 0.4px 0.4px 0.4px 0.4px black;*/
+  /*color: #ffffff;*/
+}
 
 .rectangular_form input {
   font-size: 14px;
   color: #000000;
+}
+
+.rectangular_form .form-group {
+	margin: 20px;
 }
 
 footer {
@@ -99,12 +115,12 @@ footer p, footer h4 {
 }
 
 h4 {
-  color: #7F7F7F;
-  text-shadow: 1px 1px #212121;
+	color: #7F7F7F;
+	text-shadow: 1px 1px #212121;
 }
 
 .breadcrumb {
-  margin-bottom: 0px;
+	margin-bottom: 0px;
 }
 
 @media (min-width: 1200px) {
@@ -138,28 +154,6 @@ h4 {
     padding-bottom: 12px;
   }
 }
-
-.caption {
-  background-color: #F5F5F5;
-}
-
-.caption p {
-  color: #000000;
-  padding: 10px;
-}
-
-.thumbnail img {
-  width: 100%;
-  height: 300px;
-}
-
-.junkText {
-  font-weight: bold;
-}
-
-.row {
-  padding-top: 20px;
-}
 </style>
 </head>
 <body>
@@ -180,7 +174,7 @@ h4 {
               <li><a href="Cars_Booking.html">Cars Booking</a></li>
               <li><a href="Hotels_Booking.html">Hotels Booking</a></li>
               <li><a href="Cruises_Booking.html">Cruises Booking</a></li>
-              <li class="active"><a href="#">Members<span class="sr-only">(current)</span></a></li>
+              <li><a href="Members.html">Members</a></li>
             </ul>
            
             <ul class="nav navbar-nav navbar-right">
@@ -193,61 +187,31 @@ h4 {
               </li>
             </ul>
          
-<form class="navbar-form navbar-right" role="search">
+      <form class="navbar-form navbar-right" role="search">
         <div class="form-group">
           <input type="text" class="form-control" placeholder="Search">
         </div>
         <button type="submit" class="btn btn-default">Submit</button>
       </form>
-     
     </div>
     <!-- /.navbar-collapse --> 
   </div>
   <!-- /.container-fluid --> 
-</nav>
-</div>
-<div class="container main-container">
-  
+  </nav>
+  </div>
+  <div class="container main-container">
     <div class="row">
       <ol class="breadcrumb col-md-12">
         <li><a href="index.html">Home</a></li>
-        <li><a href="Members.html">Members</a></li>
-         <li><a href="#">Membership Privileges</a></li>
+        <li><a href="Flights_Booking.html">Flights Booking</a></li>
+        <li><a href="Flights_Booking.html">One Way</a></li>
+        <li class="active"><a href="#">Search Result</a></li>
       </ol>
-
-        <!-- <div class="col-xs-12 col-sm-12 col-lg-9 col-md-9 container2">
-            <div class="rectangular_form">
-               
-            </div>
-            
-        </div> -->
-            
-          </div>
-          
-            <div class="row">
-              <div class="col-xs-12 col-sm-12 col-lg-12 col-md-12">
-                <div class="thumbnail">
-                  <img src="imgs/MembersTN1new.jpg" alt="membership privileges">
-                  <div class="caption">
-                    <h3>Membership Privileges</h3>
-                    <p><span class="junkText">What is Lorem Ipsum?</span><br/>
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                    <p><span class="junkText">What is Lorem Ipsum?</span><br/>
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                    <p><span class="junkText">What is Lorem Ipsum?</span><br/>
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-      
-        
-        </div>
-     
-    
-</div>
+    <h1>You are in Advanced Search Result Page</h1>
   </div>
+</div>    
+</div>
+</div>
 
 <footer class="text-center">
   <div class="container">
@@ -266,5 +230,6 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 <script src="js/jquery-1.11.3.min.js"></script> 
 <!-- Include all compiled plugins (below), or include individual files as needed --> 
 <script src="js/bootstrap.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
