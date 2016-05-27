@@ -154,6 +154,20 @@ h4 {
     padding-bottom: 12px;
   }
 }
+
+.resultTableContainer {
+  margin-top: 60px;
+  margin-bottom: 25px;
+}
+
+#colored {
+  background-color: #F5F5F5;
+}
+
+th, td {
+  padding: 20px;
+}
+
 </style>
 </head>
 <body>
@@ -207,7 +221,66 @@ h4 {
         <li><a href="Flights_Booking.html">One Way</a></li>
         <li class="active"><a href="#">Search Result</a></li>
       </ol>
-    <h1>You are in Advanced Search Result Page</h1>
+    <div class="container resultTableContainer">
+        <table border="1" style="width:100%">
+          <tr id="colored">
+            <th>From</th>
+            <th>To</th> 
+            <th>Flight Name</th>
+            <th>Number of stops</th>
+            <th>Price</th>
+          </tr>
+          <tr>
+            <td>Denver</td>
+            <td>Bangalore</td> 
+            <td>Air India</td>
+            <td>3</td>
+            <td>$600</td>
+          </tr>
+          <tr id="colored">
+            <td>Denver</td>
+            <td>Bangalore</td> 
+            <td>Qatar Airways</td>
+            <td>2</td>
+            <td>$800</td>
+          </tr>
+          <tr>
+            <td>Denver</td>
+            <td>Bangalore</td> 
+            <td>British Airways</td>
+            <td>2</td>
+            <td>$840</td>
+          </tr>
+          <tr id="colored">
+            <td>Denver</td>
+            <td>Bangalore</td> 
+            <td>United Airlines</td>
+            <td>3</td>
+            <td>$520</td>
+          </tr>
+          <tr>
+            <td>Denver</td>
+            <td>Bangalore</td> 
+            <td>Cathy Pacific Airlines</td>
+            <td>3</td>
+            <td>$523</td>
+          </tr>
+          <tr id="colored">
+            <td>Denver</td>
+            <td>Bangalore</td> 
+            <td>Lufthansa</td>
+            <td>3</td>
+            <td>$500</td>
+          </tr>
+          <tr>
+            <td>Denver</td>
+            <td>Bangalore</td> 
+            <td>Etihad airways</td>
+            <td>2</td>
+            <td>$600</td>
+          </tr>
+        </table>
+      </div>
   </div>
 </div>    
 </div>

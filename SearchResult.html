@@ -154,6 +154,20 @@ h4 {
     padding-bottom: 12px;
   }
 }
+
+.resultTableContainer {
+  margin-top: 40px;
+  margin-bottom: 25px;
+}
+
+#colored {
+  background-color: #F5F5F5;
+}
+
+th, td {
+  padding: 20px;
+}
+
 </style>
 </head>
 <body>
@@ -207,7 +221,84 @@ h4 {
         <li><a href="Flights_Booking.html">One Way</a></li>
         <li class="active"><a href="#">Search Result</a></li>
       </ol>
-    <h1>You are in Search Result Page</h1>
+      <br/>
+      <div class="container resultTableContainer">
+        <!-- <img src="imgs/MembersTN1new.jpg" alt="membership privileges"> -->
+        <table border="1" style="width:100%">
+          <tr id="colored">
+            <th>From</th>
+            <th>To</th> 
+            <th>Flight Name</th>
+            <th>Number of stops</th>
+            <th>Class</th>
+            <th>Refundable Flight</th>
+            <th>Price</th>
+          </tr>
+          <tr>
+            <td>Denver</td>
+            <td>Bangalore</td> 
+            <td>Air India</td>
+            <td>3</td>
+            <td>Economy</td>
+            <td>No</td>
+            <td>$600</td>
+          </tr>
+          <tr id="colored">
+            <td>Denver</td>
+            <td>Bangalore</td> 
+            <td>Qatar Airways</td>
+            <td>2</td>
+            <td>Economy</td>
+            <td>No</td>
+            <td>$800</td>
+          </tr>
+          <tr>
+            <td>Denver</td>
+            <td>Bangalore</td> 
+            <td>British Airways</td>
+            <td>2</td>
+            <td>Economy</td>
+            <td>No</td>
+            <td>$840</td>
+          </tr>
+          <tr id="colored">
+            <td>Denver</td>
+            <td>Bangalore</td> 
+            <td>United Airlines</td>
+            <td>3</td>
+            <td>Economy</td>
+            <td>No</td>
+            <td>$520</td>
+          </tr>
+          <tr>
+            <td>Denver</td>
+            <td>Bangalore</td> 
+            <td>Cathy Pacific Airlines</td>
+            <td>3</td>
+            <td>Economy</td>
+            <td>Yes</td>
+            <td>$523</td>
+          </tr>
+          <tr id="colored">
+            <td>Denver</td>
+            <td>Bangalore</td> 
+            <td>Lufthansa</td>
+            <td>3</td>
+            <td>Economy</td>
+            <td>No</td>
+            <td>$500</td>
+          </tr>
+          <tr>
+            <td>Denver</td>
+            <td>Bangalore</td> 
+            <td>Etihad airways</td>
+            <td>2</td>
+            <td>Economy</td>
+            <td>Yes</td>
+            <td>$600</td>
+          </tr>
+        </table>
+      </div>
   </div>
 </div>    
 </div>
