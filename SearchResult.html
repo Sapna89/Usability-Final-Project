@@ -107,11 +107,17 @@ footer {
   background-color: #F5F5F5;
 }
 
-footer p, footer h4 {
+footer p {
   color: #272727 !important;
   text-shadow: none;
-  font-weight: 16px;
-  padding: 10px;
+  font-size: 12px;
+  padding: 8px;
+}
+
+footer h4 {
+  color: #272727 !important;
+  text-shadow: none;
+  font-size: 10px;
 }
 
 h4 {
@@ -223,7 +229,18 @@ th, td {
       </ol>
       <br/>
       <div class="container resultTableContainer">
-        <!-- <img src="imgs/MembersTN1new.jpg" alt="membership privileges"> -->
+        <form class="form-inline">
+        <div class="form-group">
+          <label for="TravellingTo">Sort By   </label>
+          <select>
+            <option value="option1">Select</option>
+            <option value="option2">Price</option>
+            <option value="option3">Number of Stops</option>
+            <option value="option4">Refundable Flight</option>
+            <option value="option5">Class</option>
+          </select>
+        </div>
+      </form>
         <table border="1" style="width:100%">
           <tr id="colored">
             <th>From</th>
@@ -308,7 +325,6 @@ th, td {
   <div class="container">
     <div class="row">
       <div class="col-xs-10">
-      <br/>
         <p>Copyright © TravelloPEDIA 2016, Sapna Naveen.</p>
       </div>
       <div class="col-xs-2">
